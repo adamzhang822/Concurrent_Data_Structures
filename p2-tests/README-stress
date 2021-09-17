@@ -1,0 +1,31 @@
+-------------------------
+Stress test instructions
+-------------------------
+
+1) copy the following files to the stress-test directory
+  - spin.c spin.h
+  - counter.c counter.h
+  - list.c list.h
+  - hash.c hash.h
+(The stress test makefile assumes these filenames)
+
+
+2) make
+
+3) Run stress tests
+- ./testCounter 
+- ./testList
+- ./testHash
+
+Notes: 
+- Don't forget to type setenv LD_LIBRARY_PATH .
+- ./testCounter stress tests your libcounter.so
+if your lib is thread-safe, you should get a "congrats" message
+if not, you will get an "argghh" message
+- Similarly, ./testHash stress tests your libhash.so; ./testList stress tests your
+liblist.so
+
+- Remember to run on machine that has more than one processor (any of the
+uchicago linux*.cs.uchicago.edu machines should be suitable)
+
+

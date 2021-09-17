@@ -1,0 +1,42 @@
+-----------------------
+Unit test instructions
+-----------------------
+
+1) Copy your project files to the unit-test directory.
+  - README
+  - Makefile
+  - spin.c spin.h
+  - counter.c counter.h
+  - list.c list.h
+  - hash.c hash.h
+(Or, just copy test.csh, run_all_tests.csh, and unit-test-scripts/ into your project directory) 
+
+2) Make sure the test.csh, run_all_tests.csh have execute permissions.
+   Otherwise, use
+   $$$]% chmod +x ./test.csh
+   $$$]% chmod +x ./run_all_tests.csh
+
+3) Run tests:
+------
+$$$]% ./run_all_tests.csh 
+        --> to run all the tests 
+$$$]% ./test.csh <test_nr> 
+        --> to run a particular test 
+
+Released Test Cases: 
+
+1  README file
+2  Makefile
+3  No pthread lock/unlock routines
+
+4  simple counter increment
+5  simple counter decrement
+
+6  simple list insert
+7  simple list delete
+8  delete non-existing list element
+
+9  simple hash insert
+10 simple hash delete
+11 delete non-existing hash table element
+
